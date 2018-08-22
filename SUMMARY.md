@@ -1,4 +1,5 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [PodCastle](README.md)
+* [Basic Use](basic-use.md)
 
