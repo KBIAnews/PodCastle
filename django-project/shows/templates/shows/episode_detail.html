@@ -48,10 +48,8 @@
                     <figcaption>
                         <p>{{ episode.image_caption }}</p>
                         {% if episode.image_credit %}
-                            <p>{{ episode.image_credit }}</p>
-                        {% endif %}
-                        {% if episode.image_source %}
-                            <p>{{ episode.image_source }}</p>
+                            <p>{{ episode.image_credit }}{% if episode.image_source %} / {{ episode.image_source }}{% endif %}
+							</p>
                         {% endif %}
                     </figcaption>
                 {% endif %}
