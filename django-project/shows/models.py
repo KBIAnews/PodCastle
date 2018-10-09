@@ -61,7 +61,7 @@ class Show (models.Model):
         max_length=1024,
         null=True,
         blank=True)
-    sponsors = models.ManyToManyField(Sponsor, null=True)
+    sponsors = models.ManyToManyField(Sponsor)
 
 
     class Meta:
