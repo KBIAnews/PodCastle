@@ -1,8 +1,15 @@
 div.split-index{
   margin-top: 2rem;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 2rem;
+
+  background: rgba(0,0,0,0.3);
+  padding: 2rem 20px;
+
+  @media screen and (max-width: $medium-screen-width) {
+    padding-top: 0.5rem;
+  }
 
   p,ul,h2,h3{
     color: #fff;
@@ -57,7 +64,7 @@ div.split-index{
 ul.subscribe-options {
   margin-top: 10px;
   li {
-    margin: 5px 0;
+    margin: 10px 0;
     font-size: 1.1rem;
 
     a {
@@ -70,13 +77,16 @@ ul.subscribe-options {
     }
   }
 
+
   @media screen and (max-width: $medium-screen-width){
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
     li {
       display: block;
       text-align: center;
+      margin: 15px 0;
+      font-size: 1.8rem;
 
       span.text {
         display: none;
@@ -86,7 +96,14 @@ ul.subscribe-options {
 
   }
 
+  @media screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    li {
+      margin: 12px 0;
+      font-size: 1.8rem;
+    }
 
-
+  }
 
 }

@@ -7,6 +7,7 @@ div.background {
   height:100%;
   z-index: -1;
   background-color: #111;
+  transition: all 1s ease-in-out;
 
   img {
     filter: blur(20px);
@@ -16,6 +17,7 @@ div.background {
     width:100%;
     height:100%;
     opacity: 0.3;
+    transition: all 1s ease-in-out;
   }
 
 }
@@ -37,6 +39,12 @@ div#pc-container{
       font-weight: 400;
       //text-transform: uppercase;
     }
+
+	@media screen and (max-width: 600px){
+      h1 {
+        font-size: 2rem;
+      }
+	}
 
     img.show-banner{
       width: 80%;
