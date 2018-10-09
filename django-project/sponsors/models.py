@@ -12,3 +12,6 @@ class Sponsor (models.Model):
     name = models.CharField(max_length=512)
     link_url = models.URLField(max_length=2048)
     logo = models.ImageField()
+
+    def __str__(self):
+        return "%s" % self.name
