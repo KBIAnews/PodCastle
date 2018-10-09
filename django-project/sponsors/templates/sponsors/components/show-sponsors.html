@@ -1,0 +1,12 @@
+{% if show.sponsors.all %}
+    <div class="sponsors-box">
+        <h2>Supported by</h2>
+        <ul class="show-sponsors">
+            {% for sponsor in show.sponsors.all %}
+                <li><a href="{{ sponsor.link_url }}">
+                    <img src="{{ sponsor.logo.url }}" alt="{{ sponsor.name }} logo">
+                </a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}

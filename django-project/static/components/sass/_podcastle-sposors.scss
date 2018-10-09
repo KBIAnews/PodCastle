@@ -1,0 +1,53 @@
+div.sponsors-box{
+  margin: 2rem 0 0.5rem 0;
+
+  ul.show-sponsors{
+    li{
+      a {
+        img{
+          max-width: 80%;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $medium-screen-width){
+
+  div.sponsors-box{
+
+
+    ul.show-sponsors{
+      @include clearfix;
+      margin-top: 1rem;
+      li{
+        width: 24%;
+        height: 55px;
+        float: left;
+        a{
+          img{
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen-width){
+
+  div.sponsors-box{
+
+
+    ul.show-sponsors{
+      li{
+        width: 48%;
+        float: left;
+        a{
+          img{
+          }
+        }
+      }
+    }
+  }
+}

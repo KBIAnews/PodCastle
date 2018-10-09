@@ -66,6 +66,7 @@
                         <li><a href="{{ show.feed_url }}"><span class="simple-svg" data-icon="simple-icons:rss" data-inline="true"></span><span class="text"> RSS Feed</span></a></li>
                     {% endif %}
                 </ul>
+                {% include "sponsors/components/show-sponsors.html" with show=show %}
             </div>
 
             <div class="split-zone split-b">
