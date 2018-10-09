@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from sponsors.models import Sponsor
 
 # Create your models here.
 
@@ -60,6 +61,7 @@ class Show (models.Model):
         max_length=1024,
         null=True,
         blank=True)
+    sponsors = models.ManyToManyField(Sponsor, null=True)
 
 
     class Meta:

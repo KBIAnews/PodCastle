@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bakery',
     'markdownify',
     'npr_api',
+    'sponsors',
     'shows',
 ]
 
