@@ -32,7 +32,7 @@ urllib3 = "==1.23"
 webencodings = "==0.5.1"
 Django = "==1.11"
 Markdown = "==2.6.8"
-Pillow = "==4.1.1"
+Pillow = "==6.2.0"
 fabric = "==1.14.1"
 fabric2 = "*"
 
